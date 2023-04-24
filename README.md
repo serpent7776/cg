@@ -28,10 +28,16 @@ source /full/path/to/activate.csh /full/path/to/activate.csh
 . /full/path/to/activate.fish
 ```
 
-Once activated, press `Ctrl-G` to show directories in `fzy` finder.
+Once activated, press `Ctrl-G` to show directories in fuzzy finder (`fzy` by default).
+
+## Configuration
+
+Environment variables:
+
+- `CG_FF`: Specifies fuzzy finder to be used. `fzy` by default.
 
 ## Requirements
 
 - `git`
 - `awk`
-- `fzy`
+- `fzy` or any other fuzzy finder
