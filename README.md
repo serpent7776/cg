@@ -10,6 +10,12 @@ Quickly switch between directories in git versioned project.
 eval $(sh /full/path/to/activate.sh)
 ```
 
+- `bash`, `zsh`:
+
+```sh
+. /full/path/to/activate.sh
+```
+
 - `tcsh`:
 
 ```tcsh
