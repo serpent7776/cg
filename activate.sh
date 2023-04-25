@@ -11,7 +11,7 @@ if [ -n "`echo $ZSH_VERSION`" ]; then
 	zle -N _cg_zsh
 	bindkey '^G' _cg_zsh
 elif [ -n "`echo $BASH_VERSINFO`" ]; then
-	_sh="$0"
+	_sh="$BASH"
 	_p="$(dirname ${BASH_SOURCE[0]})"
 	bind '"\C-G": "_cg\n"'
 else
