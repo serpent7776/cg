@@ -1,4 +1,9 @@
 set _p (status dirname)
-bind \cg 'set _d ("$_p/g.fish") && cd "$_d" && fish_prompt'
-bind --mode insert \cg 'set _d ("$_p/g.fish") && cd "$_d" && fish_prompt'
-bind --mode normal \cg 'set _d ("$_p/g.fish") && cd "$_d" && fish_prompt'
+
+function _cg
+	set _d ("$_p/g.fish") && cd "$_d" && fish_prompt
+end
+
+bind \cg '_cg'
+bind --mode insert \cg '_cg'
+bind --mode normal \cg '_cg'
