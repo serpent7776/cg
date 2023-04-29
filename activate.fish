@@ -1,7 +1,7 @@
-set _p (status dirname)
+set _cg_root (status dirname)
 
 function _cg
-	set _d ("$_p/g.fish") && cd "$_d" && fish_prompt
+	set _d ("$_cg_root/g.fish") && cd "$_d" && fish_prompt
 end
 
 bind \cg '_cg'
