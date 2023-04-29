@@ -6,7 +6,7 @@ if [ -n "`echo $ZSH_VERSION`" ]; then
 	_cg_zsh() {
 		_cg  && zle reset-prompt
 	}
-	_cg_sh=zsh
+	_cg_sh="$ZSH_ARGZERO"
 	_cg_root="$(dirname $0)"
 	zle -N _cg_zsh
 	bindkey '^G' _cg_zsh
